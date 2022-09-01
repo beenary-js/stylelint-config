@@ -1,0 +1,33 @@
+{
+  "name": "stylelint-config-beenary",
+  "version": "1.0.0",
+  "description": "Stylelint config for Beenary",
+  "main": "index.js",
+  "repository": "git@github.com:beenary-js/stylelint-config.git",
+  "author": "Beata Obrok <beata.obrok@u2i.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --loglevel warn --write \"**/*.{js,jsx,ts,tsx,css,less,scss,sass,html,json,md,mdx,yml,yaml,graphql,graphqls}\"",
+    "posttest": "npm run format",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "prettier": ">=2"
+  },
+  "dependencies": {
+    "stylelint-config-clean-order": "^0.9.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">= 14"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,less,scss,sass,html,json,md,mdx,yml,yaml,graphql,graphqls}": "prettier --write"
+  },
+  "files": [
+    "index.js"
+  ]
+}
