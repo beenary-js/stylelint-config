@@ -1,6 +1,6 @@
 module.exports = {
   extends: ["stylelint-config-standard", "stylelint-config-clean-order"],
-
+  plugins: ["stylelint-order"],
   rules: {
     "selector-class-pattern": "^[a-z0-9-_]+$",
     "selector-max-combinators": 3,

@@ -14,7 +14,8 @@
   "devDependencies": {
     "husky": ">=7",
     "lint-staged": ">=10",
-    "prettier": ">=2"
+    "prettier": ">=2",
+    "stylelint": "^14.11.0"
   },
   "dependencies": {
     "stylelint-config-clean-order": "^0.9.0",
@@ -22,11 +23,16 @@
     "stylelint-order": "^5.0.0"
   },
   "peerDependencies": {
-    "stylelint": ">= 14"
+    "stylelint": ">= 14.11"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,less,scss,sass,html,json,md,mdx,yml,yaml,graphql,graphqls}": "prettier --write"
   },
+  "keywords": [
+    "beenary",
+    "stylelint",
+    "stylelint-config"
+  ],
   "files": [
     "index.js"
   ]
