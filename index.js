@@ -15,5 +15,7 @@ module.exports = {
     "declaration-no-important": true,
     "declaration-empty-line-before": null,
     "font-weight-notation": "numeric",
+    "hue-degree-notation": "number",
+    "alpha-value-notation": "number",
   },
 }
